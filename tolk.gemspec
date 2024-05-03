@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "rails", ">= 6.0"
   s.add_runtime_dependency "sprockets-rails", "~> 3.4"
 
-  s.add_runtime_dependency 'safe_yaml', ">= 0.8.6"
+  s.add_runtime_dependency 'safe_yaml', ">= 1.0.5"
 
 
 
@@ -31,7 +31,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "capybara", "~> 3.14"
   s.add_development_dependency "cuprite"
   s.add_development_dependency "sassc"
-  s.add_development_dependency "puma", "~> 5.5"
+  s.add_development_dependency "puma"
   s.add_development_dependency "appraisal"
 
   if File.exist?('UPGRADING')
