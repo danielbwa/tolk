@@ -6,6 +6,8 @@ module Tolk
     })
 
     def self.load(yaml)
+      return if yaml.blank?
+
       # SafeYAML.load has different arity depending on the YAML engine used.
       if SafeYAML::YAML_ENGINE == "psych"
         SafeYAML.load(yaml, nil, SAFE_YAML_OPTIONS)
